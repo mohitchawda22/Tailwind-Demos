@@ -1,5 +1,8 @@
+import MyDialog from "./Components/MyDialog"
 import Navbar from "./Components/Navbar"
+import BentoGrid from "./sections/bentoGrid"
 import {Hero,Subscribe,Services,Specialoffer,SuperQuality,Footer,PopularProducts,CustomerReviews} from "./sections/index"
+import Pricing from "./sections/Pricing"
 
 function App() {
 
@@ -12,11 +15,12 @@ function App() {
       <section className="padding">
         <PopularProducts/>
       </section>
-      {/* <section className="padding">
-        <SuperQuality/>
+      <section className="padding text-center">
+        <BentoGrid/>
+        <MyDialog/>
       </section>
       <section className="padding">
-       <Services/>
+       <Pricing/>
       </section>
       <section className="padding">
        <Specialoffer/>
@@ -29,7 +33,7 @@ function App() {
       </section>
       <section className="bg-black padding-x padding-t pb-8">
         <Footer/>
-      </section> */}
+      </section>
     </main>
   )
 }
