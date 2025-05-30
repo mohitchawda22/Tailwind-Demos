@@ -1,5 +1,5 @@
 {
-  "name": "headlessui-demo",
+  "name": "fansportiz",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "headlessui-demo": "file:",
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
+    "fansportiz": "file:",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
