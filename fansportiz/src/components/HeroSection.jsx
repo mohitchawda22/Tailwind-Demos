@@ -3,7 +3,7 @@ import arrowdown from "../assets/images/arrowdown.svg"
 
 function HeroSection() {
     return (
-        <div className="px-6 pt-32 lg:px-32 bg-gradient-to-b from-white to-gray-200">
+        <div className="px-6 pt-32 lg:px-32 bg-stadium">
             <div className="mx-auto max-w-6xl py-6 sm:py-6 lg:py-4">
                 <div className="text-center">
                     <h1 className="text-balance text-5xl sm:text-6xl lg:text-[80px] font-normal leading-[90px] text-blue font-jersey ">

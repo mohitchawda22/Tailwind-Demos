@@ -17,7 +17,7 @@ function Conversation() {
                 </div>
 
                 <div className="md:w-1/2 flex flex-col items-center justify-center mt-8 md:mt-0 relative">
-                    <button className="bg-white text-blue px-10 py-6 font-semibold leading-[100%] uppercase rounded-[4px] shadow hover:bg-gray-200 transition">
+                    <button className="bg-white text-blue px-10 py-6 font-semibold leading-[100%] uppercase rounded-[4px] shadow hover:bg-gradient-to-r from-blue to-black hover:text-white transition-all">
                         TALK WITH US
                     </button>
                     <div className="max-w-xs md:max-w-sm lg:max-w-md flex justify-center mt-6 lg:mt-0">

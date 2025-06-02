@@ -37,19 +37,21 @@ function Footer() {
               <a href=""><img src={youtube} alt="" title='youtube' /></a>
             </div>
           </div>
-          <button className="flex items-center my-12 border-2 rounded-2xl px-3 py-5 text-xl leading-[30px] font-medium text-blue hover:bg-gray-50 transition h-auto">
+          <button className="flex items-center my-12 border-2 rounded-2xl px-3 py-5 text-xl leading-[30px] font-medium text-blue hover:bg-blue hover:text-white hover:border-blue hover:shadow-blue shadow-md shadow-white transition h-auto ">
             <a href=""><img src={pdf} alt="" /></a>
-            <p className='text-left'>Download Complete <br /><span className="text-blue font-bold"> Presentation</span></p>
+            <p className='text-left'>Download Complete <br /><span className="font-bold">Presentation</span></p>
           </button>
         </div>
       </div>
 
       <div className="border-t mt-6 pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-2">
-        <div>
+        <div className="flex items-center gap-2">
           <p className="text-blue text-lg font-semibold leading-7">
             © Fansportiz, 2021 Powered By
           </p>
-          <a href=""><img src={yudiz} alt="" /></a>
+          <a href="">
+            <img src={yudiz} alt="Yudiz Logo" className="h-6 w-auto" />
+          </a>
         </div>
         <div className="flex gap-4 text-gray-500">
           <a href="#" className="hover:text-red-500">Terms & Conditions</a>

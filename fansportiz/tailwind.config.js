@@ -18,6 +18,7 @@ export default {
       "talkbg":"url('./src/assets/images/Talkbg.png')",
       "faqbg":"url('./src/assets/images/Background.png')",
       "gradientbg":"url('./src/assets/images/gradientbg.png')",
+      "stadium":"url('./src/assets/images/stadiumbg.png')"
 
     }
     },

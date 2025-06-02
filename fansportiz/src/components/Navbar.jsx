@@ -7,10 +7,21 @@ import logo from "../assets/images/Logo.svg"
 function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+     window.addEventListener("scroll",function(){
+        const navbar=document.getElementById("navbar")
+        if (window.scrollY > 50){
+          navbar.classList.add("bg-white","transition-all");
+          navbar.classList.remove("bg-transparent")
+        }else{
+          navbar.classList.remove("bg-white");
+          navbar.classList.add("bg-transparent")
+        }
+    })
+
     return (
-        <div className="bg-white">
-            <header className="fixed inset-x-0 top-0 z-50 bg-white">
-                <nav className="flex items-center justify-between px-4 py-4 lg:px-8 lg:py-3" aria-label="Global">
+        <div className="">
+            <header className="fixed inset-x-0 top-0 z-50 ">
+                <nav className="flex items-center justify-between px-4 py-4 lg:px-8 lg:py-3" aria-label="Global" id='navbar'>
                     <div className="flex lg:flex-1 justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <img
@@ -69,7 +80,7 @@ function Navbar() {
                                         <a
                                             key={item.name}
                                             href={item.href}
-                                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-blue hover:text-orange"
                                         >
                                             {item.name}
                                         </a>
@@ -78,7 +89,7 @@ function Navbar() {
                                 <div className="py-6">
                                     <a
                                         href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-blue hover:text-orange"
                                     >
                                         Start A Project
                                     </a>

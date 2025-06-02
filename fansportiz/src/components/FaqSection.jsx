@@ -1,7 +1,7 @@
 import React from 'react'
 import { faqData } from '../constant/faq'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { ChevronUpIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import questionmark from "../assets/images/questionmark.svg"
 import triangle from "../assets/images/triangle.svg"
 
@@ -18,10 +18,8 @@ function FaqSection() {
                 alt="batsman"
                 width={120}
                 height={120}
-                className="absolute bottom-0 left-0 z-0"
+                className="absolute bottom-0 left-0 w-20 md:w-30 lg:w-40 z-0"
             />
-
-
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl lg:text-[64px] leading-[70px] font-medium uppercase text-[#002B7F] font-jersey">
@@ -37,7 +35,7 @@ function FaqSection() {
                                 <div className="bg-white rounded-[7px] border border-gray-300">
                                     <DisclosureButton className="flex justify-between w-full px-6 py-4 text-left font-medium text-blue focus:outline-none text-xl leading-7">
                                         <span>{index + 1}. {item.question}</span>
-                                        <ChevronUpIcon
+                                        <ChevronDownIcon
                                             className={`${open ? "rotate-180 transform" : ""
                                                 } w-5 h-5 text-[#787878]`}
                                         />
