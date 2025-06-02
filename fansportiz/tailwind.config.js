@@ -14,6 +14,11 @@ export default {
       },
       backgroundImage:{
       "sport":"url('./src/assets/images/spbg.png')",
+      "bluebg":"url('./src/assets/images/bluebg.png')",
+      "talkbg":"url('./src/assets/images/Talkbg.png')",
+      "faqbg":"url('./src/assets/images/Background.png')",
+      "gradientbg":"url('./src/assets/images/gradientbg.png')",
+
     }
     },
     colors:{
@@ -21,7 +26,9 @@ export default {
       blue:"#042365",
       white:"#ffffff",
       orange:"#FD0000",
-      grey:"#D1D1D1"
+      grey:"#D1D1D1",
+      darkorange:"#CC0000",
+
     },
   },
   plugins: [],
